@@ -1,0 +1,7 @@
+getgenv().vcautofarm = true;
+
+while wait() do
+    if getgenv().vcautofarm == true then
+        game:GetService('ReplicatedStorage').MainEvent:FireServer("ClickedButton")
+    end
+end
