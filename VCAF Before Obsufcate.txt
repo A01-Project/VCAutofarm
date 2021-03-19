@@ -1,0 +1,127 @@
+-- Made By Achutaine
+-- HCAF For HyperClicks 
+local VCAF = Instance.new("ScreenGui")
+local ExploitMainFrame = Instance.new("Frame")
+local VCAFS = Instance.new("TextButton")
+local VCAFST = Instance.new("TextButton")
+local CloseVCAF = Instance.new("TextButton")
+local Title = Instance.new("TextLabel")
+local DestroyUI = Instance.new("TextButton")
+local OpenExploitMainFrame = Instance.new("Frame")
+local OpenVCAF = Instance.new("TextButton")
+
+VCAF.Name = "VCAF"
+VCAF.Parent = game.CoreGui
+VCAF.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ExploitMainFrame.Name = "ExploitMainFrame"
+ExploitMainFrame.Parent = VCAF
+ExploitMainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExploitMainFrame.BackgroundTransparency = 0.500
+ExploitMainFrame.BorderSizePixel = 0
+ExploitMainFrame.Position = UDim2.new(0.105490439, 0, 0.481572479, 0)
+ExploitMainFrame.Size = UDim2.new(0, 460, 0, 308)
+ExploitMainFrame.Visible = false
+ExploitMainFrame.Active = true
+ExploitMainFrame.Draggable = true
+
+VCAFS.Name = "VCAFS"
+VCAFS.Parent = ExploitMainFrame
+VCAFS.BackgroundColor3 = Color3.fromRGB(124, 124, 124)
+VCAFS.BackgroundTransparency = 0.500
+VCAFS.BorderSizePixel = 0
+VCAFS.Position = UDim2.new(0.282608688, 0, 0.337662339, 0)
+VCAFS.Size = UDim2.new(0, 200, 0, 50)
+VCAFS.Font = Enum.Font.Cartoon
+VCAFS.Text = "Start Autofarm"
+VCAFS.TextColor3 = Color3.fromRGB(0, 0, 0)
+VCAFS.TextSize = 14.000
+VCAFS.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/A01-Project/VCAutofarm/main/vcautofarmstart.lua", true))()
+end)
+
+
+VCAFST.Name = "VCAFST"
+VCAFST.Parent = ExploitMainFrame
+VCAFST.BackgroundColor3 = Color3.fromRGB(124, 124, 124)
+VCAFST.BackgroundTransparency = 0.500
+VCAFST.BorderSizePixel = 0
+VCAFST.Position = UDim2.new(0.282608688, 0, 0.574675322, 0)
+VCAFST.Size = UDim2.new(0, 200, 0, 50)
+VCAFST.Font = Enum.Font.Cartoon
+VCAFST.Text = "Stop Autofarm"
+VCAFST.TextColor3 = Color3.fromRGB(0, 0, 0)
+VCAFST.TextSize = 14.000
+VCAFST.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/A01-Project/VCAutofarm/main/vcstopautofarm.lua", true))()
+end)
+
+CloseVCAF.Name = "CloseVCAF"
+CloseVCAF.Parent = ExploitMainFrame
+CloseVCAF.BackgroundColor3 = Color3.fromRGB(124, 124, 124)
+CloseVCAF.BackgroundTransparency = 0.500
+CloseVCAF.BorderSizePixel = 0
+CloseVCAF.Position = UDim2.new(0.282191604, 0, 0.806598783, 0)
+CloseVCAF.Size = UDim2.new(0, 200, 0, 50)
+CloseVCAF.Font = Enum.Font.Cartoon
+CloseVCAF.Text = "Close VCAF"
+CloseVCAF.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseVCAF.TextSize = 14.000
+CloseVCAF.MouseButton1Down:connect(function()
+ExploitMainFrame.Visible = false
+OpenExploitMainFrame.Visible = true
+end)
+
+Title.Name = "Title"
+Title.Parent = ExploitMainFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(0, 460, 0, 50)
+Title.Font = Enum.Font.Cartoon
+Title.Text = "Viking Clickers Auto Farm"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+DestroyUI.Name = "DestroyUI"
+DestroyUI.Parent = ExploitMainFrame
+DestroyUI.BackgroundColor3 = Color3.fromRGB(124, 124, 124)
+DestroyUI.BackgroundTransparency = 0.500
+DestroyUI.BorderSizePixel = 0
+DestroyUI.Position = UDim2.new(0.0478260852, 0, 0.577922106, 0)
+DestroyUI.Size = UDim2.new(0, 96, 0, 50)
+DestroyUI.Font = Enum.Font.Cartoon
+DestroyUI.Text = "Destroy GUI"
+DestroyUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+DestroyUI.TextSize = 14.000
+DestroyUI.MouseButton1Down:connect(function()
+VCAF:Destroy()
+end)
+
+OpenExploitMainFrame.Name = "OpenExploitMainFrame"
+OpenExploitMainFrame.Parent = VCAF
+OpenExploitMainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenExploitMainFrame.BackgroundTransparency = 0.500
+OpenExploitMainFrame.BorderSizePixel = 0
+OpenExploitMainFrame.Position = UDim2.new(0, 0, 0.786772013, 0)
+OpenExploitMainFrame.Size = UDim2.new(0, 145, 0, 49)
+OpenExploitMainFrame.Active = true
+OpenExploitMainFrame.Draggable = true
+
+OpenVCAF.Name = "OpenVCAF"
+OpenVCAF.Parent = OpenExploitMainFrame
+OpenVCAF.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenVCAF.BackgroundTransparency = 0.500
+OpenVCAF.BorderSizePixel = 0
+OpenVCAF.Position = UDim2.new(0, 0, 0.0114898086, 0)
+OpenVCAF.Size = UDim2.new(0, 145, 0, 49)
+OpenVCAF.Font = Enum.Font.Cartoon
+OpenVCAF.Text = "Open VCAF"
+OpenVCAF.TextColor3 = Color3.fromRGB(0, 0, 0)
+OpenVCAF.TextSize = 14.000
+OpenVCAF.MouseButton1Down:connect(function()
+OpenExploitMainFrame.Visible = false
+ExploitMainFrame.Visible = true
+end)
